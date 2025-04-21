@@ -1,0 +1,260 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+  <!-- Hero Section -->
+  <section class="relative bg-dark text-cream py-16 px-6 overflow-hidden">
+    <!-- Background pattern - subtle grid -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0" style="background-image: radial-gradient(#22a39f 1px, transparent 1px); background-size: 20px 20px;"></div>
+    </div>
+    
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      <h2 class="text-4xl font-bold mb-6">Services</h2>
+      <div class="h-1 w-20 bg-primary mx-auto mb-8"></div>
+      <p class="text-lg text-cream/90 max-w-2xl mx-auto">
+        I offer custom-tailored digital services designed to help small businesses thrive online.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Grid Section with Enhanced Cards -->
+  <section class="bg-cream py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid gap-8 md:grid-cols-2">
+        <!-- Service Card 1 - Website Development -->
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-primary">
+          <div class="flex items-start">
+            <div class="bg-primary/10 p-4 rounded-full mr-4">
+              <div class="text-primary text-3xl">🖥️</div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-dark mb-3">Website Development</h3>
+              <p class="text-dark/80 mb-4">
+                Custom-built websites that are fast, responsive, and aligned with your brand — no templates, just code.
+              </p>
+              <ul class="space-y-2 text-dark/70">
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Clean, modern code
+                </li>
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Responsive across all devices
+                </li>
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  SEO-optimized structure
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2 - Logo Design -->
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-primary">
+          <div class="flex items-start">
+            <div class="bg-primary/10 p-4 rounded-full mr-4">
+              <div class="text-primary text-3xl">🎨</div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-dark mb-3">Logo Design</h3>
+              <p class="text-dark/80 mb-4">
+                Clean, modern logos crafted to capture your business identity and stand out from the crowd.
+              </p>
+              <ul class="space-y-2 text-dark/70">
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Unique, custom designs
+                </li>
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Multiple revisions included
+                </li>
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Files in all needed formats
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3 - SEO Optimization -->
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-primary">
+          <div class="flex items-start">
+            <div class="bg-primary/10 p-4 rounded-full mr-4">
+              <div class="text-primary text-3xl">🚀</div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-dark mb-3">SEO Optimization</h3>
+              <p class="text-dark/80 mb-4">
+                Boost your visibility on search engines with optimized content, structure, and performance tuning.
+              </p>
+              <ul class="space-y-2 text-dark/70">
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Keyword research
+                </li>
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Performance optimization
+                </li>
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Analytics setup
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 4 - Digital Marketing -->
+        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-primary">
+          <div class="flex items-start">
+            <div class="bg-primary/10 p-4 rounded-full mr-4">
+              <div class="text-primary text-3xl">📱</div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-dark mb-3">Digital Marketing</h3>
+              <p class="text-dark/80 mb-4">
+                Social media, email marketing, and content strategies that help you connect with your audience.
+              </p>
+              <ul class="space-y-2 text-dark/70">
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Content calendar creation
+                </li>
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Email campaign setup
+                </li>
+                <li class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Growth strategy
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="bg-white py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h3 class="text-2xl font-bold text-dark mb-3">My Work Process</h3>
+        <div class="h-1 w-16 bg-primary mx-auto mb-6"></div>
+        <p class="text-dark/80 max-w-2xl mx-auto">
+          A clear, collaborative approach to bringing your project to life.
+        </p>
+      </div>
+      
+      <div class="relative">
+        <!-- Process Line (desktop only) -->
+        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary/30 -translate-x-1/2"></div>
+        
+        <div class="space-y-12 relative">
+          <!-- Step 1 -->
+          <div class="md:flex items-center">
+            <div class="md:w-1/2 md:pr-16 mb-6 md:mb-0 md:text-right">
+              <h4 class="text-xl font-semibold text-dark mb-2">Discovery & Planning</h4>
+              <p class="text-dark/70">We'll discuss your goals, target audience, and requirements to create a clear project roadmap.</p>
+            </div>
+            <div class="hidden md:flex justify-center items-center relative z-10">
+              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold">1</div>
+            </div>
+            <div class="md:w-1/2 md:pl-16 md:hidden">
+              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold mb-4">1</div>
+            </div>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="md:flex items-center">
+            <div class="md:w-1/2 md:pr-16 mb-6 md:mb-0 md:text-right md:order-1 md:hidden">
+              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold mb-4 md:ml-auto">2</div>
+            </div>
+            <div class="hidden md:flex justify-center items-center relative z-10 md:order-2">
+              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold">2</div>
+            </div>
+            <div class="md:w-1/2 md:pl-16 md:order-3">
+              <h4 class="text-xl font-semibold text-dark mb-2">Design & Development</h4>
+              <p class="text-dark/70">I'll create mockups for your approval, then build your solution with attention to detail and performance.</p>
+            </div>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="md:flex items-center">
+            <div class="md:w-1/2 md:pr-16 mb-6 md:mb-0 md:text-right">
+              <h4 class="text-xl font-semibold text-dark mb-2">Testing & Refinement</h4>
+              <p class="text-dark/70">Thorough testing across devices ensures everything works perfectly before launch.</p>
+            </div>
+            <div class="hidden md:flex justify-center items-center relative z-10">
+              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold">3</div>
+            </div>
+            <div class="md:w-1/2 md:pl-16 md:hidden">
+              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold mb-4">3</div>
+            </div>
+          </div>
+          
+          <!-- Step 4 -->
+          <div class="md:flex items-center">
+            <div class="md:w-1/2 md:pr-16 mb-6 md:mb-0 md:text-right md:order-1 md:hidden">
+              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold mb-4 md:ml-auto">4</div>
+            </div>
+            <div class="hidden md:flex justify-center items-center relative z-10 md:order-2">
+              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold">4</div>
+            </div>
+            <div class="md:w-1/2 md:pl-16 md:order-3">
+              <h4 class="text-xl font-semibold text-dark mb-2">Launch & Support</h4>
+              <p class="text-dark/70">Your project goes live with full support and guidance on maintaining and growing your digital presence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 px-4 bg-primary text-dark">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">
+        Let's discuss your needs and create a customized solution that helps your business thrive online.
+      </p>
+      <a
+        href="/contact"
+        class="inline-block bg-dark text-cream px-8 py-4 rounded-lg font-semibold shadow-lg hover:bg-dark/90 hover:-translate-y-1 transition-all duration-300"
+      >
+        Get a Free Quote
+      </a>
+    </div>
+  </section>
+</MainLayout>

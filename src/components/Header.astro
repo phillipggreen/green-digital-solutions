@@ -1,0 +1,74 @@
+---
+// Add any necessary imports here
+---
+
+<header class="bg-dark text-cream shadow-md sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="/" class="text-2xl font-bold tracking-wide text-primary hover:opacity-90 transition-opacity">
+      Green Digital Solutions
+    </a>
+    
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="/" class="hover:text-primary transition-colors">Home</a>
+      <a href="/about" class="hover:text-primary transition-colors">About</a>
+      <a href="/services" class="hover:text-primary transition-colors">Services</a>
+      <a href="/contact" class="hover:text-primary transition-colors">Contact</a>
+    </nav>
+    
+    <!-- Mobile Menu Button -->
+    <button 
+      id="mobile-menu-button" 
+      class="md:hidden text-primary focus:outline-none" 
+      aria-label="Menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  
+  <!-- Mobile Navigation Menu (hidden by default) -->
+  <div id="mobile-menu" class="hidden bg-dark/95 border-t border-cream/10 absolute w-full left-0 right-0 shadow-lg">
+    <div class="container mx-auto px-4 py-4">
+      <nav class="flex flex-col space-y-4">
+        <a href="/" class="text-lg py-2 hover:text-primary transition-colors">Home</a>
+        <a href="/about" class="text-lg py-2 hover:text-primary transition-colors">About</a>
+        <a href="/services" class="text-lg py-2 hover:text-primary transition-colors">Services</a>
+        <a href="/contact" class="text-lg py-2 hover:text-primary transition-colors">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    
+    if (mobileMenuButton && mobileMenu && menuIcon && closeIcon) {
+      mobileMenuButton.addEventListener('click', () => {
+        // Toggle menu visibility
+        mobileMenu.classList.toggle('hidden');
+        
+        // Toggle icons
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      });
+      
+      // Close menu when clicking on links
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        });
+      });
+    }
+  });
+</script>
