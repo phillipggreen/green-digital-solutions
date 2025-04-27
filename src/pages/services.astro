@@ -30,7 +30,7 @@ import MainLayout from "../layouts/MainLayout.astro";
               <div class="text-primary text-3xl">🖥️</div>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-dark mb-3">Website Development</h3>
+              <h3 class="text-lg font-semibold text-dark mb-3">Website Development</h3>
               <p class="text-dark/80 mb-4">
                 Custom-built websites that are fast, responsive, and aligned with your brand — no templates, just code.
               </p>
@@ -65,7 +65,7 @@ import MainLayout from "../layouts/MainLayout.astro";
               <div class="text-primary text-3xl">🎨</div>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-dark mb-3">Logo Design</h3>
+              <h3 class="text-lg font-semibold text-dark mb-3">Logo Design</h3>
               <p class="text-dark/80 mb-4">
                 Clean, modern logos crafted to capture your business identity and stand out from the crowd.
               </p>
@@ -100,7 +100,7 @@ import MainLayout from "../layouts/MainLayout.astro";
               <div class="text-primary text-3xl">🚀</div>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-dark mb-3">SEO Optimization</h3>
+              <h3 class="text-lg font-semibold text-dark mb-3">SEO Optimization</h3>
               <p class="text-dark/80 mb-4">
                 Boost your visibility on search engines with optimized content, structure, and performance tuning.
               </p>
@@ -135,7 +135,7 @@ import MainLayout from "../layouts/MainLayout.astro";
               <div class="text-primary text-3xl">📱</div>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-dark mb-3">Digital Marketing</h3>
+              <h3 class="text-lg font-semibold text-dark mb-3">Digital Marketing</h3>
               <p class="text-dark/80 mb-4">
                 Social media, email marketing, and content strategies that help you connect with your audience.
               </p>
@@ -166,87 +166,111 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
   </section>
 
-  <!-- Process Section -->
   <section class="bg-white py-16 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-12">
-        <h3 class="text-2xl font-bold text-dark mb-3">My Work Process</h3>
-        <div class="h-1 w-16 bg-primary mx-auto mb-6"></div>
-        <p class="text-dark/80 max-w-2xl mx-auto">
+      <div class="text-center mb-16">
+        <h3 class="text-3xl font-bold text-dark mb-2">My Work Process</h3>
+        <div class="h-1 w-16 bg-primary mx-auto mb-4"></div>
+        <p class="text-dark/70 max-w-2xl mx-auto">
           A clear, collaborative approach to bringing your project to life.
         </p>
       </div>
-      
+  
       <div class="relative">
-        <!-- Process Line (desktop only) -->
-        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary/30 -translate-x-1/2"></div>
-        
-        <div class="space-y-12 relative">
+        <!-- Vertical Line -->
+        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary/30 transform -translate-x-1/2"></div>
+  
+        <!-- Steps -->
+        <div class="space-y-16 relative">
           <!-- Step 1 -->
-          <div class="md:flex items-center">
-            <div class="md:w-1/2 md:pr-16 mb-6 md:mb-0 md:text-right">
-              <h4 class="text-xl font-semibold text-dark mb-2">Discovery & Planning</h4>
-              <p class="text-dark/70">We'll discuss your goals, target audience, and requirements to create a clear project roadmap.</p>
+          <div class="md:flex md:items-center">
+            <div class="md:w-1/2 md:pr-12 text-right mb-8 md:mb-0">
+              <h4 class="text-2xl font-semibold text-dark mb-2">Discovery & Planning</h4>
+              <p class="text-dark/70">
+                We'll discuss your goals, target audience, and requirements to create a clear project roadmap.
+              </p>
             </div>
-            <div class="hidden md:flex justify-center items-center relative z-10">
-              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold">1</div>
+            <div class="flex justify-center md:w-auto md:mx-8 mb-8 md:mb-0">
+              <div class="w-12 h-12 rounded-full bg-primary text-dark flex items-center justify-center text-lg font-bold">
+                1
+              </div>
             </div>
-            <div class="md:w-1/2 md:pl-16 md:hidden">
-              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold mb-4">1</div>
+            <div class="md:w-1/2 md:pl-12 md:hidden">
+              <div class="w-12 h-12 rounded-full bg-primary text-dark flex items-center justify-center text-lg font-bold mb-4">
+                1
+              </div>
             </div>
           </div>
-          
+  
           <!-- Step 2 -->
-          <div class="md:flex items-center">
-            <div class="md:w-1/2 md:pr-16 mb-6 md:mb-0 md:text-right md:order-1 md:hidden">
-              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold mb-4 md:ml-auto">2</div>
+          <div class="md:flex md:items-center md:flex-row-reverse">
+            <div class="md:w-1/2 md:pl-12 text-left mb-8 md:mb-0">
+              <h4 class="text-2xl font-semibold text-dark mb-2">Design & Development</h4>
+              <p class="text-dark/70">
+                I'll create mockups for your approval, then build your solution with attention to detail and performance.
+              </p>
             </div>
-            <div class="hidden md:flex justify-center items-center relative z-10 md:order-2">
-              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold">2</div>
+            <div class="flex justify-center md:w-auto md:mx-8 mb-8 md:mb-0">
+              <div class="w-12 h-12 rounded-full bg-primary text-dark flex items-center justify-center text-lg font-bold">
+                2
+              </div>
             </div>
-            <div class="md:w-1/2 md:pl-16 md:order-3">
-              <h4 class="text-xl font-semibold text-dark mb-2">Design & Development</h4>
-              <p class="text-dark/70">I'll create mockups for your approval, then build your solution with attention to detail and performance.</p>
+            <div class="md:w-1/2 md:pr-12 md:hidden">
+              <div class="w-12 h-12 rounded-full bg-primary text-dark flex items-center justify-center text-lg font-bold mb-4">
+                2
+              </div>
             </div>
           </div>
-          
+  
           <!-- Step 3 -->
-          <div class="md:flex items-center">
-            <div class="md:w-1/2 md:pr-16 mb-6 md:mb-0 md:text-right">
-              <h4 class="text-xl font-semibold text-dark mb-2">Testing & Refinement</h4>
-              <p class="text-dark/70">Thorough testing across devices ensures everything works perfectly before launch.</p>
+          <div class="md:flex md:items-center">
+            <div class="md:w-1/2 md:pr-12 text-right mb-8 md:mb-0">
+              <h4 class="text-2xl font-semibold text-dark mb-2">Testing & Refinement</h4>
+              <p class="text-dark/70">
+                Thorough testing across devices ensures everything works perfectly before launch.
+              </p>
             </div>
-            <div class="hidden md:flex justify-center items-center relative z-10">
-              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold">3</div>
+            <div class="flex justify-center md:w-auto md:mx-8 mb-8 md:mb-0">
+              <div class="w-12 h-12 rounded-full bg-primary text-dark flex items-center justify-center text-lg font-bold">
+                3
+              </div>
             </div>
-            <div class="md:w-1/2 md:pl-16 md:hidden">
-              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold mb-4">3</div>
+            <div class="md:w-1/2 md:pl-12 md:hidden">
+              <div class="w-12 h-12 rounded-full bg-primary text-dark flex items-center justify-center text-lg font-bold mb-4">
+                3
+              </div>
             </div>
           </div>
-          
+  
           <!-- Step 4 -->
-          <div class="md:flex items-center">
-            <div class="md:w-1/2 md:pr-16 mb-6 md:mb-0 md:text-right md:order-1 md:hidden">
-              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold mb-4 md:ml-auto">4</div>
+          <div class="md:flex md:items-center md:flex-row-reverse">
+            <div class="md:w-1/2 md:pl-12 text-left mb-8 md:mb-0">
+              <h4 class="text-2xl font-semibold text-dark mb-2">Launch & Support</h4>
+              <p class="text-dark/70">
+                Your project goes live with full support and guidance on maintaining and growing your digital presence.
+              </p>
             </div>
-            <div class="hidden md:flex justify-center items-center relative z-10 md:order-2">
-              <div class="w-12 h-12 bg-primary text-dark rounded-full flex items-center justify-center text-xl font-bold">4</div>
+            <div class="flex justify-center md:w-auto md:mx-8 mb-8 md:mb-0">
+              <div class="w-12 h-12 rounded-full bg-primary text-dark flex items-center justify-center text-lg font-bold">
+                4
+              </div>
             </div>
-            <div class="md:w-1/2 md:pl-16 md:order-3">
-              <h4 class="text-xl font-semibold text-dark mb-2">Launch & Support</h4>
-              <p class="text-dark/70">Your project goes live with full support and guidance on maintaining and growing your digital presence.</p>
+            <div class="md:w-1/2 md:pr-12 md:hidden">
+              <div class="w-12 h-12 rounded-full bg-primary text-dark flex items-center justify-center text-lg font-bold mb-4">
+                4
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section>  
 
   <!-- CTA Section -->
   <section class="py-16 px-4 bg-primary text-dark">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
-      <p class="text-xl mb-8 max-w-2xl mx-auto">
+      <p class="text-lg mb-8 max-w-2xl mx-auto">
         Let's discuss your needs and create a customized solution that helps your business thrive online.
       </p>
       <a
