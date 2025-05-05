@@ -38,64 +38,84 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
   </section>
 
-  <!-- Skills Section with Visual Enhancements -->
-  <section class="bg-white py-16 px-6">
+  <!-- Skills Section with Logo Icons and Enhancements -->
+  <section class="bg-primary py-16 px-6">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-10">
         <h3 class="text-2xl font-semibold text-dark mb-3">Skills & Tools</h3>
-        <div class="h-1 w-16 bg-primary mx-auto mb-6"></div>
+        <div class="h-1 w-16 bg-dark mx-auto mb-6 rounded-full"></div>
         <p class="text-dark/70 max-w-2xl mx-auto">
           I use modern technologies and frameworks to build efficient, scalable digital solutions.
         </p>
       </div>
-      
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <!-- Skill Cards -->
-        <div class="bg-cream p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-          <div class="text-primary text-2xl mb-2">⚡</div>
-          <span class="text-dark font-medium">HTML & CSS</span>
+
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-6">
+        <!-- Skill Cards with Hover Effects -->
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/html5.svg" alt="HTML5 Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
+          <span class="text-dark font-medium">HTML5</span>
         </div>
-        
-        <div class="bg-cream p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-          <div class="text-primary text-2xl mb-2">🔧</div>
+
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/css.svg" alt="CSS3 Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
+          <span class="text-dark font-medium">CSS3</span>
+        </div>
+
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/javascript.svg" alt="JavaScript Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
           <span class="text-dark font-medium">JavaScript</span>
         </div>
-        
-        <div class="bg-cream p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-          <div class="text-primary text-2xl mb-2">🚀</div>
-          <span class="text-dark font-medium">Astro</span>
-        </div>
-        
-        <div class="bg-cream p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-          <div class="text-primary text-2xl mb-2">💨</div>
-          <span class="text-dark font-medium">Tailwind CSS</span>
-        </div>
-        
-        <div class="bg-cream p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-          <div class="text-primary text-2xl mb-2">⚛️</div>
+
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/react.svg" alt="React Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
           <span class="text-dark font-medium">React</span>
         </div>
-        
-        <div class="bg-cream p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-          <div class="text-primary text-2xl mb-2">📊</div>
-          <span class="text-dark font-medium">Git & GitHub</span>
+
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/astro.svg" alt="Astro Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
+          <span class="text-dark font-medium">Astro</span>
         </div>
-        
-        <div class="bg-cream p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-          <div class="text-primary text-2xl mb-2">📈</div>
-          <span class="text-dark font-medium">SEO & Analytics</span>
+
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/tailwindcss.svg" alt="Tailwind CSS Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
+          <span class="text-dark font-medium">Tailwind CSS</span>
         </div>
-        
-        <div class="bg-cream p-4 rounded-lg text-center hover:shadow-md transition-shadow">
-          <div class="text-primary text-2xl mb-2">📱</div>
-          <span class="text-dark font-medium">Responsive Design</span>
+
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/github.svg" alt="GitHub Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
+          <span class="text-dark font-medium">GitHub</span>
+        </div>
+
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/git.svg" alt="Git Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
+          <span class="text-dark font-medium">Git</span>
+        </div>
+
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/shopify.svg" alt="Shopify Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
+          <span class="text-dark font-medium">Shopify</span>
+        </div>
+
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/wordpress.svg" alt="WordPress Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
+          <span class="text-dark font-medium">WordPress</span>
+        </div>
+
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/wix.svg" alt="Wix Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
+          <span class="text-dark font-medium">Wix</span>
+        </div>
+
+        <div class="bg-cream p-4 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
+          <img src="/icons/squarespace.svg" alt="Squarespace Logo" class="w-8 h-8 mx-auto mb-2 hover:brightness-90 transition" />
+          <span class="text-dark font-medium">Squarespace</span>
         </div>
       </div>
     </div>
   </section>
-  
+
   <!-- CTA Section -->
-  <section class="py-16 px-4 bg-primary text-dark">
+  <section class="pt-0 pb-16 px-4 bg-primary text-dark">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Ready to Work Together?</h2>
       <p class="text-xl mb-8 max-w-2xl mx-auto">
