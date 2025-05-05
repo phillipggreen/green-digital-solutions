@@ -5,11 +5,9 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout>
   <!-- Hero Section with Enhanced Design -->
   <section class="relative bg-dark text-cream py-20 px-6 overflow-hidden">
-    <!-- Background pattern - subtle grid with animation -->
     <div class="absolute inset-0 opacity-10">
       <div class="absolute inset-0" style="background-image: radial-gradient(#22a39f 1px, transparent 1px); background-size: 20px 20px;"></div>
     </div>
-    
     <div class="max-w-4xl mx-auto text-center relative z-10">
       <h2 class="text-5xl font-bold mb-6">Contact Me</h2>
       <div class="h-1 w-24 bg-primary mx-auto mb-8 rounded-full"></div>
@@ -19,12 +17,12 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
   </section>
 
-  <!-- Contact Form Section with Enhanced Design -->
+  <!-- Contact Form Section -->
   <section class="bg-cream py-20 px-6">
     <div class="max-w-5xl mx-auto">
       <div class="bg-white shadow-xl rounded-xl overflow-hidden transform transition-all duration-500 hover:shadow-2xl">
         <div class="md:flex">
-          <!-- Contact Info Sidebar with Enhanced Design -->
+          <!-- Contact Info Sidebar -->
           <div class="bg-primary text-dark p-10 md:w-2/5">
             <h3 class="text-2xl font-bold mb-8">Get In Touch</h3>
             <div class="space-y-8">
@@ -41,7 +39,6 @@ import MainLayout from "../layouts/MainLayout.astro";
                   </a>
                 </div>
               </div>
-              
               <div class="flex items-start">
                 <div class="bg-dark/15 p-3 rounded-full mr-4 shadow-inner">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -54,90 +51,58 @@ import MainLayout from "../layouts/MainLayout.astro";
                   <p class="text-dark/80">Summerville, SC</p>
                 </div>
               </div>
-
-              <!-- Social Media Links section completely removed -->
             </div>
           </div>
 
-          <!-- Contact Form with Enhanced Design -->
+          <!-- Contact Form -->
           <div class="p-10 md:w-3/5">
             <form 
-              id="contactForm" 
-              action="https://formspree.io/f/xvgpprde" 
+              name="contact" 
               method="POST" 
+              data-netlify="true" 
+              netlify-honeypot="bot-field" 
+              id="contactForm"
               class="space-y-6"
             >
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+              </p>
+
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                  <input 
-                    type="text" 
-                    id="name"
-                    name="name" 
-                    placeholder="Your name" 
-                    required 
-                    class="w-full bg-gray-50 border border-gray-200 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm" 
-                  />
+                  <input type="text" id="name" name="name" required placeholder="Your name" class="w-full bg-gray-50 border border-gray-200 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm" />
                   <p id="nameError" class="hidden text-red-500 text-sm mt-1">Please enter your name</p>
                 </div>
-                
                 <div>
                   <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                  <input 
-                    type="email" 
-                    id="email"
-                    name="email" 
-                    placeholder="your.email@example.com" 
-                    required 
-                    class="w-full bg-gray-50 border border-gray-200 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm" 
-                  />
+                  <input type="email" id="email" name="email" required placeholder="your.email@example.com" class="w-full bg-gray-50 border border-gray-200 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm" />
                   <p id="emailError" class="hidden text-red-500 text-sm mt-1">Please enter a valid email</p>
                 </div>
               </div>
-              
+
               <div>
                 <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                <input 
-                  type="text" 
-                  id="subject"
-                  name="subject" 
-                  placeholder="What's this about?" 
-                  required 
-                  class="w-full bg-gray-50 border border-gray-200 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm" 
-                />
+                <input type="text" id="subject" name="subject" required placeholder="What's this about?" class="w-full bg-gray-50 border border-gray-200 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm" />
                 <p id="subjectError" class="hidden text-red-500 text-sm mt-1">Please enter a subject</p>
               </div>
-              
+
               <div>
                 <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                <textarea 
-                  id="message"
-                  name="message" 
-                  rows="6" 
-                  placeholder="Tell me about your project..." 
-                  required 
-                  class="w-full bg-gray-50 border border-gray-200 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm resize-none"
-                ></textarea>
+                <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..." class="w-full bg-gray-50 border border-gray-200 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm resize-none"></textarea>
                 <p id="messageError" class="hidden text-red-500 text-sm mt-1">Please enter your message</p>
               </div>
-              
+
               <div>
-                <button 
-                  type="submit" 
-                  id="submitButton"
-                  class="bg-primary text-dark px-8 py-4 rounded-lg text-lg font-medium hover:bg-primary/90 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center w-full md:w-auto"
-                >
+                <button type="submit" id="submitButton" class="bg-primary text-dark px-8 py-4 rounded-lg text-lg font-medium hover:bg-primary/90 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center w-full md:w-auto">
                   <span>Send Message</span>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </button>
-                
-                <button 
-                  type="button" 
-                  id="loadingButton"
-                  class="hidden bg-primary text-dark px-8 py-4 rounded-lg text-lg font-medium opacity-75 cursor-not-allowed flex items-center justify-center w-full md:w-auto"
-                >
+
+                <button type="button" id="loadingButton" class="hidden bg-primary text-dark px-8 py-4 rounded-lg text-lg font-medium opacity-75 cursor-not-allowed flex items-center justify-center w-full md:w-auto">
                   <span class="flex items-center justify-center">
                     <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-dark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                       <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -146,31 +111,20 @@ import MainLayout from "../layouts/MainLayout.astro";
                     Sending...
                   </span>
                 </button>
-                
-                <div 
-                  id="successMessage" 
-                  class="hidden mt-6 p-4 bg-green-50 text-green-700 rounded-lg flex items-center opacity-0 transition-opacity duration-300 border border-green-200 shadow-sm"
-                >
+
+                <div id="successMessage" class="hidden mt-6 p-4 bg-green-50 text-green-700 rounded-lg flex items-center opacity-0 transition-opacity duration-300 border border-green-200 shadow-sm">
                   <svg class="h-5 w-5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <span>Thanks! I'll be in touch soon.</span>
                 </div>
 
-                <div 
-                  id="errorMessage" 
-                  class="hidden mt-6 p-4 bg-red-50 text-red-700 rounded-lg flex items-center opacity-0 transition-opacity duration-300 border border-red-200 shadow-sm"
-                >
+                <div id="errorMessage" class="hidden mt-6 p-4 bg-red-50 text-red-700 rounded-lg flex items-center opacity-0 transition-opacity duration-300 border border-red-200 shadow-sm">
                   <svg class="h-5 w-5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <span>Something went wrong. Please try again later.</span>
                 </div>
-              </div>
-
-              <!-- Honeypot field to prevent spam -->
-              <div class="hidden">
-                <input type="text" name="_gotcha" />
               </div>
             </form>
           </div>
@@ -178,207 +132,4 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
     </div>
   </section>
-
-  <style>
-    /* Enhance form inputs on focus */
-    input:focus, textarea:focus {
-      box-shadow: 0 0 0 3px rgba(34, 163, 159, 0.2);
-      transition: all 0.2s ease;
-    }
-    
-    /* Improve placeholder text appearance */
-    ::placeholder {
-      color: #94a3b8;
-      opacity: 0.7;
-    }
-    
-    /* Enhance scrollbar for textarea */
-    textarea::-webkit-scrollbar {
-      width: 8px;
-    }
-    
-    textarea::-webkit-scrollbar-track {
-      background: #f1f5f9;
-      border-radius: 4px;
-    }
-    
-    textarea::-webkit-scrollbar-thumb {
-      background: #cbd5e1;
-      border-radius: 4px;
-    }
-    
-    textarea::-webkit-scrollbar-thumb:hover {
-      background: #94a3b8;
-    }
-  </style>
-
-  <script>
-    // @ts-nocheck - Disable TypeScript checking for this script
-    
-    // Wait for the DOM to be fully loaded
-    document.addEventListener('DOMContentLoaded', () => {
-      const form = document.getElementById('contactForm');
-      const submitButton = document.getElementById('submitButton');
-      const loadingButton = document.getElementById('loadingButton');
-      const successMessage = document.getElementById('successMessage');
-      const errorMessage = document.getElementById('errorMessage');
-      
-      // Form field elements
-      const nameInput = document.getElementById('name');
-      const emailInput = document.getElementById('email');
-      const subjectInput = document.getElementById('subject');
-      const messageInput = document.getElementById('message');
-      
-      // Error message elements
-      const nameError = document.getElementById('nameError');
-      const emailError = document.getElementById('emailError');
-      const subjectError = document.getElementById('subjectError');
-      const messageError = document.getElementById('messageError');
-      
-      // Validate email format
-      function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-      }
-      
-      // Hide error when user types
-      function addInputListeners(input, errorElement) {
-        input.addEventListener('input', () => {
-          errorElement.classList.add('hidden');
-          input.classList.remove('border-red-500');
-          input.classList.add('border-gray-200');
-        });
-      }
-      
-      // Add listeners to all form fields
-      addInputListeners(nameInput, nameError);
-      addInputListeners(emailInput, emailError);
-      addInputListeners(subjectInput, subjectError);
-      addInputListeners(messageInput, messageError);
-      
-      // Function to show message
-      function showMessage(element) {
-        element.classList.remove('hidden');
-        setTimeout(() => {
-          element.classList.remove('opacity-0');
-          element.classList.add('opacity-100');
-        }, 10);
-      }
-      
-      // Function to hide message
-      function hideMessage(element) {
-        element.classList.remove('opacity-100');
-        element.classList.add('opacity-0');
-        setTimeout(() => {
-          element.classList.add('hidden');
-        }, 300);
-      }
-      
-      // Form submission handler
-      form.addEventListener('submit', async (event) => {
-        event.preventDefault();
-        
-        // Reset all error messages
-        nameError.classList.add('hidden');
-        emailError.classList.add('hidden');
-        subjectError.classList.add('hidden');
-        messageError.classList.add('hidden');
-        
-        // Reset all input borders
-        nameInput.classList.remove('border-red-500');
-        emailInput.classList.remove('border-red-500');
-        subjectInput.classList.remove('border-red-500');
-        messageInput.classList.remove('border-red-500');
-        
-        // Validate all fields
-        let isValid = true;
-        
-        if (!nameInput.value.trim()) {
-          nameError.classList.remove('hidden');
-          nameInput.classList.add('border-red-500');
-          isValid = false;
-        }
-        
-        if (!emailInput.value.trim()) {
-          emailError.textContent = 'Please enter your email';
-          emailError.classList.remove('hidden');
-          emailInput.classList.add('border-red-500');
-          isValid = false;
-        } else if (!isValidEmail(emailInput.value.trim())) {
-          emailError.textContent = 'Please enter a valid email address';
-          emailError.classList.remove('hidden');
-          emailInput.classList.add('border-red-500');
-          isValid = false;
-        }
-        
-        if (!subjectInput.value.trim()) {
-          subjectError.classList.remove('hidden');
-          subjectInput.classList.add('border-red-500');
-          isValid = false;
-        }
-        
-        if (!messageInput.value.trim()) {
-          messageError.classList.remove('hidden');
-          messageInput.classList.add('border-red-500');
-          isValid = false;
-        }
-        
-        // If validation passes, process the form
-        if (isValid) {
-          // Show loading state
-          submitButton.classList.add('hidden');
-          loadingButton.classList.remove('hidden');
-          
-          try {
-            // Prepare form data
-            const formData = new FormData(form);
-            
-            // Send data to Formspree
-            const response = await fetch(form.action, {
-              method: form.method,
-              body: formData,
-              headers: {
-                'Accept': 'application/json'
-              }
-            });
-            
-            // Handle response
-            if (response.ok) {
-              // Success - show success message
-              showMessage(successMessage);
-              
-              // Reset form
-              form.reset();
-              
-              // Hide success message after delay
-              setTimeout(() => {
-                hideMessage(successMessage);
-              }, 5000);
-            } else {
-              // Error - show error message
-              showMessage(errorMessage);
-              
-              // Hide error message after delay
-              setTimeout(() => {
-                hideMessage(errorMessage);
-              }, 5000);
-            }
-          } catch (error) {
-            // Handle network errors
-            console.error('Form submission error:', error);
-            showMessage(errorMessage);
-            
-            // Hide error message after delay
-            setTimeout(() => {
-              hideMessage(errorMessage);
-            }, 5000);
-          } finally {
-            // Restore submit button regardless of outcome
-            submitButton.classList.remove('hidden');
-            loadingButton.classList.add('hidden');
-          }
-        }
-      });
-    });
-  </script>
 </MainLayout>
