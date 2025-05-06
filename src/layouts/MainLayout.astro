@@ -22,13 +22,37 @@ import Footer from "../components/Footer.astro";
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#22a39f" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
 
-  <body class="min-h-screen flex flex-col justify-between">
+  <body class="min-h-screen flex flex-col justify-between bg-cream text-dark">
     <Header />
     <main class="flex-grow">
       <slot />
     </main>
     <Footer />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script defer>
+      document.addEventListener('DOMContentLoaded', () => {
+        const sliders = document.querySelectorAll('.swiper');
+        sliders.forEach((slider) => {
+          new Swiper(slider, {
+            loop: true,
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+          });
+        });
+      });
+    </script>
   </body>
 </html>

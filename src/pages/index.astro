@@ -1,15 +1,15 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import TestimonialSlider from "../components/TestimonialSlider.astro";
 ---
 
 <MainLayout>
-  <!-- Hero Section with Background -->
+  <!-- Hero Section -->
   <section class="relative bg-dark text-cream py-24 px-4 overflow-hidden">
-    <!-- Background pattern - subtle grid -->
     <div class="absolute inset-0 opacity-10">
       <div class="absolute inset-0" style="background-image: radial-gradient(#22a39f 1px, transparent 1px); background-size: 20px 20px;"></div>
     </div>
-    
+
     <div class="max-w-6xl mx-auto relative z-10">
       <div class="text-center max-w-3xl mx-auto">
         <h1 class="text-4xl md:text-6xl font-bold mb-6">
@@ -28,7 +28,7 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
   </section>
 
-  <!-- Services Preview Section -->
+  <!-- Services Section -->
   <section class="py-20 px-4 bg-cream">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
@@ -37,9 +37,9 @@ import MainLayout from "../layouts/MainLayout.astro";
           Custom-tailored digital solutions designed to help your business thrive online.
         </p>
       </div>
-      
+
       <div class="grid gap-8 md:grid-cols-3">
-        <!-- Service Card 1 -->
+        <!-- Service Cards -->
         <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-primary hover:shadow-xl transition-all duration-300">
           <div class="text-primary text-4xl mb-4">🖥️</div>
           <h3 class="text-xl font-semibold text-dark mb-3">Website Development</h3>
@@ -47,8 +47,6 @@ import MainLayout from "../layouts/MainLayout.astro";
             Custom-built websites that are fast, responsive, and aligned with your brand — no templates, just clean code.
           </p>
         </div>
-        
-        <!-- Service Card 2 -->
         <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-primary hover:shadow-xl transition-all duration-300">
           <div class="text-primary text-4xl mb-4">🎨</div>
           <h3 class="text-xl font-semibold text-dark mb-3">Logo Design</h3>
@@ -56,8 +54,6 @@ import MainLayout from "../layouts/MainLayout.astro";
             Clean, modern logos crafted to capture your business identity and stand out from the crowd.
           </p>
         </div>
-        
-        <!-- Service Card 3 -->
         <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-primary hover:shadow-xl transition-all duration-300">
           <div class="text-primary text-4xl mb-4">🚀</div>
           <h3 class="text-xl font-semibold text-dark mb-3">SEO Optimization</h3>
@@ -66,7 +62,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           </p>
         </div>
       </div>
-      
+
       <div class="text-center mt-12">
         <a href="/services" class="inline-flex items-center text-primary font-semibold hover:underline">
           View all services
@@ -79,7 +75,7 @@ import MainLayout from "../layouts/MainLayout.astro";
   </section>
 
   <!-- Process Section -->
-  <section class="py-20 px-4 bg-white">
+  <section class="pt-0 pb-20 px-4 bg-cream">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">How We Work</h2>
@@ -87,30 +83,23 @@ import MainLayout from "../layouts/MainLayout.astro";
           A simple, effective process to bring your digital vision to life.
         </p>
       </div>
-      
+
       <div class="grid gap-6 md:grid-cols-4">
-        <!-- Step 1 -->
         <div class="text-center">
           <div class="w-16 h-16 bg-primary text-dark rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
           <h3 class="text-xl font-semibold text-dark mb-2">Discovery</h3>
           <p class="text-dark/70">We learn about your business goals and requirements</p>
         </div>
-        
-        <!-- Step 2 -->
         <div class="text-center">
           <div class="w-16 h-16 bg-primary text-dark rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
           <h3 class="text-xl font-semibold text-dark mb-2">Planning</h3>
           <p class="text-dark/70">We create a detailed roadmap for your project</p>
         </div>
-        
-        <!-- Step 3 -->
         <div class="text-center">
           <div class="w-16 h-16 bg-primary text-dark rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
           <h3 class="text-xl font-semibold text-dark mb-2">Creation</h3>
           <p class="text-dark/70">We build your solution with careful attention to detail</p>
         </div>
-        
-        <!-- Step 4 -->
         <div class="text-center">
           <div class="w-16 h-16 bg-primary text-dark rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
           <h3 class="text-xl font-semibold text-dark mb-2">Launch</h3>
@@ -120,33 +109,10 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
   </section>
 
-    <!-- Testimonial Section -->
-    <section class="py-20 px-4 bg-dark text-cream">
-      <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">What Clients Say</h2>
-          <p class="text-lg text-cream/70 max-w-2xl mx-auto">
-            Don't just take our word for it. ↓
-          </p>
-        </div>
-        
-        <div class="bg-dark/50 p-8 rounded-lg border border-cream/10">
-          <p class="text-xl italic mb-6 leading-relaxed">
-            "Green Digital Solutions built a professional, easy-to-navigate website for my golf cart parts business. It’s clean, organized, and exactly what I needed to take my brand online. I’m proud to share it with my customers and excited about what’s next."
-          </p>
-          <div class="flex items-center">
-            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-dark font-bold text-xl">K</div>
-            <div class="ml-4">
-              <h4 class="font-semibold">Kevin Reed</h4>
-              <p class="text-cream/70">Owner, KRM NXT Mod</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- ✅ Testimonials (Component-Based) -->
+  <TestimonialSlider />
 
-
-  <!-- About Brief -->
+  <!-- About Section -->
   <section class="py-16 px-4 bg-cream">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-dark mb-6">About Green Digital Solutions</h2>
@@ -162,7 +128,7 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
   </section>
 
-  <!-- CTA Section -->
+  <!-- CTA -->
   <section class="py-16 px-4 bg-primary text-dark">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Ready to Grow Your Online Presence?</h2>
@@ -177,4 +143,6 @@ import MainLayout from "../layouts/MainLayout.astro";
       </a>
     </div>
   </section>
+  <!-- 🔧 Include Swiper logic -->
+  <script type="module" src="/js/testimonial-slider.js" defer></script>
 </MainLayout>
