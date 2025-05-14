@@ -2,13 +2,32 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+
+const siteTitle = "Green Digital Solutions";
+const siteDescription = "Custom websites, logos, and digital strategies for small businesses.";
+const siteUrl = "https://greendigitalsolutions.dev";
+const imageUrl = `${siteUrl}/og-image.jpg`;
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Green Digital Solutions</title>
+    <title>{siteTitle}</title>
+    <meta name="description" content={siteDescription} />
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={siteDescription} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:url" content={siteUrl} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={siteTitle} />
+    <meta name="twitter:description" content={siteDescription} />
+    <meta name="twitter:image" content={imageUrl} />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +42,7 @@ import Footer from "../components/Footer.astro";
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#22a39f" />
 
-    <!-- Font Awwesome -->
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e6860efdb2.js" crossorigin="anonymous"></script>
 
     <!-- Swiper CSS -->
